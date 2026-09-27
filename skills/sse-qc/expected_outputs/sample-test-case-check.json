@@ -1,0 +1,20 @@
+{
+  "file": "assets/sample-test-case.md",
+  "mode": "test-case",
+  "status": "PASS",
+  "sections_total": 2,
+  "sections_present": 2,
+  "sections": [
+    {
+      "header": "# Test Case",
+      "present": true
+    },
+    {
+      "header": "## Not covered",
+      "present": true
+    }
+  ],
+  "placeholder_count": 0,
+  "placeholder_samples": [],
+  "errors": []
+}

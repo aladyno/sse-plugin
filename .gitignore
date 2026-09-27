@@ -1,0 +1,63 @@
+### Windows
+# Windows thumbnail cache files
+Thumbs.db
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+# Git worktrees created by agent workflows
+/worktrees/
+.claude/worktrees/
+
+# Claude Code runtime state
+.claude/scheduled_tasks.lock
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+
+# Eval results (transient run data)
+**/eval-results/
+
+# Adapters (skill-discovery core, ADR-0022) — deps + per-run eval output,
+# scoped to adapters/ (currently the repo's only JS package).
+# No dist/ entry is needed: the package is noEmit (no build output exists).
+adapters/node_modules/
+adapters/eval/results/
+
+# Temporary files
+tmp/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+# Blueprint work-orders (per-task scratch; may contain sensitive details)
+docs/blueprint/work-orders/
+
+# OpenCode export — reproducible build artifact (run `just export-opencode`)
+dist/
+
+# OpenCode project-local install — regenerate with `just setup-opencode .opencode`
+# (plus `just install-opencode-ocx .opencode` for the OCX orchestration plugins)
+.opencode/
+.ocx/

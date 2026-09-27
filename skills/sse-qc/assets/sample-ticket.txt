@@ -1,0 +1,20 @@
+[SAMPLE — fictional ticket, for demo/validation only]
+
+Key: PROJ-9001
+Type: Story | Priority: Critical | Labels: payment, orders
+
+Summary: Let guest customers cancel an order within 24h with an automatic refund
+
+Description:
+Today a guest customer (checkout without an account) who wants to cancel must email
+support. Requirement: add a "Cancel order" link to the order confirmation email. When
+the customer opens the link within 24h of placing the order and before anything has
+shipped, the system cancels the order and refunds the card used for payment according
+to the store cancellation policy.
+
+Acceptance Criteria:
+1. The cancel link works for 24h from order creation (store local time).
+2. Orders that have shipped, or are outside the policy window, show a "cannot cancel" message.
+3. The refund is the amount paid minus the cancellation fee; the refund amount is shown before the customer confirms.
+
+Latest comment (Product Owner): "24h is measured from order creation in UTC, not store local time."

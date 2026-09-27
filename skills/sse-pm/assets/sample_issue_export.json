@@ -1,0 +1,19 @@
+{
+  "_comment": "Sample issue-tracker export (Jira REST search shape, trimmed). Input for scripts/flow_forecast.py; expected output pinned in expected_flow_metrics.json (run with --forecast 20).",
+  "issues": [
+    {"key": "PROJ-101", "fields": {"summary": "User authentication service", "status": {"name": "Done"}, "created": "2026-05-04T09:00:00.000+0000", "resolutiondate": "2026-05-08T16:00:00.000+0000"}},
+    {"key": "PROJ-102", "fields": {"summary": "Dashboard layout", "status": {"name": "Done"}, "created": "2026-05-04T09:00:00.000+0000", "resolutiondate": "2026-05-12T11:00:00.000+0000"}},
+    {"key": "PROJ-103", "fields": {"summary": "Password reset flow", "status": {"name": "Done"}, "created": "2026-05-05T09:00:00.000+0000", "resolutiondate": "2026-05-13T15:00:00.000+0000"}},
+    {"key": "PROJ-104", "fields": {"summary": "Billing webhooks", "status": {"name": "Done"}, "created": "2026-05-11T09:00:00.000+0000", "resolutiondate": "2026-05-20T10:00:00.000+0000"}},
+    {"key": "PROJ-105", "fields": {"summary": "Email notifications", "status": {"name": "Done"}, "created": "2026-05-12T09:00:00.000+0000", "resolutiondate": "2026-05-19T17:00:00.000+0000"}},
+    {"key": "PROJ-106", "fields": {"summary": "Audit log export", "status": {"name": "Done"}, "created": "2026-05-13T09:00:00.000+0000", "resolutiondate": "2026-05-22T12:00:00.000+0000"}},
+    {"key": "PROJ-107", "fields": {"summary": "Mobile responsive nav", "status": {"name": "Done"}, "created": "2026-05-18T09:00:00.000+0000", "resolutiondate": "2026-05-27T09:30:00.000+0000"}},
+    {"key": "PROJ-108", "fields": {"summary": "Rate limiting middleware", "status": {"name": "Done"}, "created": "2026-05-19T09:00:00.000+0000", "resolutiondate": "2026-05-29T14:00:00.000+0000"}},
+    {"key": "PROJ-109", "fields": {"summary": "Data export CSV", "status": {"name": "Done"}, "created": "2026-05-20T09:00:00.000+0000", "resolutiondate": "2026-06-03T16:00:00.000+0000"}},
+    {"key": "PROJ-110", "fields": {"summary": "SSO SAML integration", "status": {"name": "Done"}, "created": "2026-05-25T09:00:00.000+0000", "resolutiondate": "2026-06-10T10:00:00.000+0000"}},
+    {"key": "PROJ-111", "fields": {"summary": "Search relevance tuning", "status": {"name": "Done"}, "created": "2026-06-01T09:00:00.000+0000", "resolutiondate": "2026-06-09T11:00:00.000+0000"}},
+    {"key": "PROJ-112", "fields": {"summary": "Realtime presence indicators", "status": {"name": "In Progress"}, "created": "2026-05-26T09:00:00.000+0000"}},
+    {"key": "PROJ-113", "fields": {"summary": "Usage analytics dashboard", "status": {"name": "In Progress"}, "created": "2026-06-08T09:00:00.000+0000"}},
+    {"key": "PROJ-114", "fields": {"summary": "Legacy importer deprecation", "status": {"name": "To Do"}, "created": "2026-06-09T09:00:00.000+0000"}}
+  ]
+}

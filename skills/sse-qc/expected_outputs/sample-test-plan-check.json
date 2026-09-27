@@ -1,0 +1,48 @@
+{
+  "file": "assets/sample-test-plan.md",
+  "mode": "test-plan",
+  "status": "PASS",
+  "sections_total": 9,
+  "sections_present": 9,
+  "sections": [
+    {
+      "header": "# Test Plan",
+      "present": true
+    },
+    {
+      "header": "## 1. Scope",
+      "present": true
+    },
+    {
+      "header": "## 2. Test objectives",
+      "present": true
+    },
+    {
+      "header": "## 3. Test strategy",
+      "present": true
+    },
+    {
+      "header": "## 4. Environment & test data",
+      "present": true
+    },
+    {
+      "header": "## 5. Entry / Exit criteria",
+      "present": true
+    },
+    {
+      "header": "## 6. Risks & mitigation",
+      "present": true
+    },
+    {
+      "header": "## 7. Roles & schedule",
+      "present": true
+    },
+    {
+      "header": "## 8. Deliverables",
+      "present": true
+    }
+  ],
+  "placeholder_count": 0,
+  "placeholder_samples": [],
+  "errors": []
+}

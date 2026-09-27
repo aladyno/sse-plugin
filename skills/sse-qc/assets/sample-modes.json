@@ -1,0 +1,34 @@
+{
+  "_comment": "SAMPLE — machine-readable map of sse-qc modes, their output targets, and the checker mode to validate each deliverable with.",
+  "modes": {
+    "diag": {
+      "deliverable": "QC Diag (3 blind spots + 1 decisive question)",
+      "output": "inline chat, never a file",
+      "checker_mode": null
+    },
+    "review": {
+      "deliverable": "Review & Gap Analysis",
+      "output": "inline chat",
+      "checker_mode": null,
+      "sample": "assets/sample-review.md"
+    },
+    "test-plan": {
+      "deliverable": "Test Plan",
+      "output": "file .md in the project's QA docs folder (default docs/qa/)",
+      "checker_mode": "test-plan",
+      "sample": "assets/sample-test-plan.md"
+    },
+    "test-case": {
+      "deliverable": "Test Case / Scenario list",
+      "output": "file .md in the project's QA docs folder (default docs/qa/)",
+      "checker_mode": "test-case",
+      "sample": "assets/sample-test-case.md"
+    },
+    "checklist": {
+      "deliverable": "Pre-release / regression QC checklist",
+      "output": "inline chat (file when it exceeds the brevity threshold)",
+      "checker_mode": "checklist",
+      "sample": "assets/sample-checklist.md"
+    }
+  }
+}
