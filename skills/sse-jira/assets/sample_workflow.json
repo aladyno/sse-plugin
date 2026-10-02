@@ -1,0 +1,47 @@
+{
+  "_comment": "Clean sample input for scripts/workflow_validator.py: every state is reachable and can reach Done; blocking is a flag, not a status. Compare with sample_workflow_with_defect.json.",
+  "name": "Software delivery workflow",
+  "initial_state": "Backlog",
+  "states": [
+    "Backlog",
+    "Ready",
+    "In Progress",
+    "In Review",
+    "Done"
+  ],
+  "terminal_states": [
+    "Done"
+  ],
+  "transitions": [
+    {
+      "name": "Refine",
+      "from": "Backlog",
+      "to": "Ready"
+    },
+    {
+      "name": "Start work",
+      "from": "Ready",
+      "to": "In Progress"
+    },
+    {
+      "name": "Request review",
+      "from": "In Progress",
+      "to": "In Review"
+    },
+    {
+      "name": "Request changes",
+      "from": "In Review",
+      "to": "In Progress"
+    },
+    {
+      "name": "Approve and complete",
+      "from": "In Review",
+      "to": "Done"
+    },
+    {
+      "name": "Reopen",
+      "from": "Done",
+      "to": "In Progress"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "file": "assets/sample-checklist.md",
+  "mode": "checklist",
+  "status": "PASS",
+  "sections_total": 7,
+  "sections_present": 7,
+  "sections": [
+    {
+      "header": "## QC Checklist",
+      "present": true
+    },
+    {
+      "header": "### Pre-deploy",
+      "present": true
+    },
+    {
+      "header": "### Functional smoke",
+      "present": true
+    },
+    {
+      "header": "### Regression",
+      "present": true
+    },
+    {
+      "header": "### Data/Config",
+      "present": true
+    },
+    {
+      "header": "### Rollback",
+      "present": true
+    },
+    {
+      "header": "### Sign-off",
+      "present": true
+    }
+  ],
+  "placeholder_count": 0,
+  "placeholder_samples": [],
+  "errors": []
+}

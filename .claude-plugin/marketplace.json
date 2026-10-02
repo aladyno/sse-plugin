@@ -1,0 +1,17 @@
+{
+  "name": "aladyno-sse",
+  "owner": {
+    "name": "aladyno"
+  },
+  "metadata": {
+    "description": "Senior Software Engineer plugins for the full SDLC."
+  },
+  "plugins": [
+    {
+      "name": "sse-plugin",
+      "source": "./",
+      "description": "Senior Software Engineer plugin covering the full SDLC.",
+      "version": "0.6.0"
+    }
+  ]
+}

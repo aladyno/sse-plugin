@@ -1,0 +1,60 @@
+{
+  "as_of": "2026-06-10",
+  "counts": {
+    "total": 14,
+    "done": 11,
+    "wip": 2
+  },
+  "cycle_time_days": {
+    "p50": 10,
+    "p85": 15,
+    "p95": 17,
+    "basis": "created->resolved (approximation: includes queue time before start)"
+  },
+  "throughput": {
+    "weekly_counts": [
+      3,
+      2,
+      2,
+      2,
+      2
+    ],
+    "mean_per_week": 2.2
+  },
+  "sle": {
+    "days": 15,
+    "conformance_pct": 90.9,
+    "source": "p85 cycle time"
+  },
+  "work_item_age": [
+    {
+      "key": "PROJ-112",
+      "summary": "Realtime presence indicators",
+      "age_days": 16
+    },
+    {
+      "key": "PROJ-113",
+      "summary": "Usage analytics dashboard",
+      "age_days": 3
+    }
+  ],
+  "aging_wip_alerts": [
+    {
+      "key": "PROJ-112",
+      "summary": "Realtime presence indicators",
+      "age_days": 16
+    }
+  ],
+  "warnings": [],
+  "forecast": {
+    "items": 20,
+    "method": "Monte Carlo over historical weekly throughput (10k trials, seeded)",
+    "weeks_at_confidence": {
+      "p50": 9,
+      "p70": 10,
+      "p85": 10,
+      "p95": 10
+    },
+    "note": "Assumes future throughput resembles the sampled history and scope stays fixed; re-run weekly as data arrives."
+  }
+}

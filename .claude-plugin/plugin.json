@@ -1,0 +1,10 @@
+{
+  "name": "sse-plugin",
+  "version": "0.6.0",
+  "description": "Senior Software Engineer (SSE) plugin: end-to-end SDLC — design, coding, testing, review, DevOps/deployment, operations & monitoring, maintenance.",
+  "author": { "name": "Dũng Đỗ" },
+  "homepage": "https://github.com/aladyno/sse-plugin",
+  "repository": "https://github.com/aladyno/sse-plugin",
+  "license": "MIT",
+  "keywords": ["sdlc", "senior-engineer", "architecture", "testing", "code-review", "devops", "sre", "maintenance"]
+}

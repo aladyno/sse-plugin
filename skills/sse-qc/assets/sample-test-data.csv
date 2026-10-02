@@ -1,0 +1,9 @@
+order_code,customer_type,created_offset_utc,shipped,item_policy,currency,cancel_fee_pct,note
+ORD-G-001,guest,-2h,false,refundable,USD,5,happy path TC-01; link replay TC-05; cross-order TC-09
+ORD-G-002,guest,-23h59m,false,refundable,USD,5,inner boundary TC-02; cross-order TC-09; accessibility TC-10
+ORD-G-003,guest,-24h01m,false,refundable,USD,5,outer boundary TC-03
+ORD-G-004,guest,-5h,true,refundable,USD,5,already shipped TC-04
+ORD-G-005,guest,-3h,false,refundable,USD,5,mock refund provider failure TC-06
+ORD-G-006,guest,-4h,false,final-sale,USD,100,zero refund TC-07
+ORD-G-007,guest,-1h,false,refundable,EUR,5,foreign currency TC-08
+ORD-R-001,registered,-6h,false,refundable,USD,5,registered-customer regression TC-11
