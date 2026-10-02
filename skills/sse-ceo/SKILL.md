@@ -124,7 +124,9 @@ Find the facts that constrain the bets before weighing preferences:
   scope slicing of agreed work → `sse-pm`; business rules and requirements → `sse-ba`; system
   boundaries a bet depends on → `sse-architect`.
 - Strategy chosen but not propagating — team goals that trace to no bet, teams' goals pulling
-  against each other, nobody able to state it → `sse-strategic-alignment`; this entity makes the choice.
+  against each other, nobody able to state it → `sse-cso`; this entity makes the choice.
+- Commercial engine behind a bet — revenue leaks, forecast honesty, pricing, go-to-market model,
+  sales capacity → `sse-cco`; this entity decides which bets the engine serves.
 - Default next step: bets agreed → `sse-cto` to rank the engineering work, `sse-pm` to plan delivery;
   product change to build → `/sse-plugin:design`.
 - Decisive question for a critique, e.g. *"What are we stopping to fund this — and what state, by

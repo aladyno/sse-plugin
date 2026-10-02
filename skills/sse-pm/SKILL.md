@@ -107,7 +107,7 @@ not a lecture.
 - Whether the work deserves capacity at all, accepting debt, or stopping a direction in progress
   → answer the delivery part, name `sse-cto`.
 - Cross-team dependencies that recur because no one owns the seam, or team goals that pull against
-  each other → answer the delivery part, name `sse-strategic-alignment`.
+  each other → answer the delivery part, name `sse-cso`.
 - Default next step: requirement slicing → `sse-ba`; release/rollout plan → `/sse-plugin:ship`.
 - Decisive question for a critique, e.g. *"Which single item, if it slips, moves the date — and
   who owns it?"*

@@ -50,7 +50,7 @@ claude --plugin-dir <path-to-this-repo>   # then /reload-plugins after edits
   senior lens, grounded in international standards. Shared rules: [`shared/expert-entity-contract.md`](shared/expert-entity-contract.md).
   - advisory (analysis in words): `sse-architect`, `sse-backend`, `sse-database`, `sse-devops`,
     `sse-integration`, `sse-maintainer`, `sse-performance`, `sse-security`, `sse-pm`, `sse-cto`, `sse-ceo`,
-    `sse-strategic-alignment`, `sse-jira`
+    `sse-cso`, `sse-cco`, `sse-jira`
   - hybrid (also writes requirement / test / design-spec documents): `sse-ba`, `sse-qc`,
     `sse-brainstorming` (idea → approved design; optional local browser "visual companion")
   - Not to be confused with the `ag-sse-*` subagents above, which drive the phase commands.
@@ -73,7 +73,7 @@ claude --plugin-dir <path-to-this-repo>   # then /reload-plugins after edits
 - Optional: bash for the companion's launcher scripts (built in on macOS/Linux; Git Bash on Windows —
   without it, the companion guide documents a PowerShell + `node` recipe)
 - Optional: `gh` CLI for reviewing GitHub PRs by number
-- Optional: Python ≥ 3.8 (standard library only) for the helper scripts in `sse-jira`, `sse-pm`, `sse-qc`
+- Optional: Python ≥ 3.8 (standard library only) for the helper scripts in `sse-jira`, `sse-pm`, `sse-qc`, `sse-cco`
 
 ## Configuration
 | Variable | Purpose |

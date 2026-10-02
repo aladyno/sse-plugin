@@ -1,6 +1,6 @@
 {
   "name": "sse-plugin",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Senior Software Engineer (SSE) plugin: end-to-end SDLC — design, coding, testing, review, DevOps/deployment, operations & monitoring, maintenance.",
   "author": { "name": "Dũng Đỗ" },
   "homepage": "https://github.com/aladyno/sse-plugin",

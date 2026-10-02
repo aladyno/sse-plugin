@@ -187,7 +187,8 @@ original form.
 | `sse-pm` | Delivery: flow, forecast, scope, risk, stakeholder cadence | Flow metrics + probabilistic forecasting | advisory |
 | `sse-cto` | Worth doing now: prioritisation under constraint, speed↔risk, accept/refuse/stop | Cost-of-delay vs cost-of-fix | advisory |
 | `sse-ceo` | Company direction and bets: where to play, capital & people across the bet portfolio, stakeholder alignment, kill/pivot | Rumelt's strategy kernel (diagnosis → guiding policy → coherent actions) | advisory |
-| `sse-strategic-alignment` | Strategy propagation: goal-cascade traceability, orphan/unowned goals, conflicting team goals, silos, unowned seams, communication gaps | Goal-tree traceability audit | advisory |
+| `sse-cso` | Strategy deployment (Chief Strategy Officer): goal-cascade traceability, orphan/unowned goals, conflicting team goals, silos, unowned seams, communication gaps | Goal-tree traceability audit | advisory |
+| `sse-cco` | Commercial engine (Chief Commercial Officer): revenue quality (retention vs. new), pipeline & forecast honesty, pricing & packaging, go-to-market model, sales capacity, concentration | Revenue bridge decomposition (opening → new + expansion − contraction − churn → closing) | advisory |
 | `sse-jira` | Issue-tracker design: workflows, JQL, automation, hygiene | Workflow-as-state-machine | advisory |
 | `sse-ba` | Business problem, rules, flows, requirement quality | As-is / to-be gap analysis | hybrid |
 | `sse-qc` | Requirement gaps, test design, quality risk | Risk-based testing | hybrid |
