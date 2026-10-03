@@ -21,3 +21,5 @@ Never run deploys, `terraform apply`, `kubectl` mutations or pushes against shar
 
 ## Output
 Change summary · files created/modified · release plan (pre-checks → steps → verification → rollback steps with trigger thresholds) · risks.
+
+Communicate per the [Communication Standard](../shared/communication-standard.md) §6: lead with the conclusion and why; blockers = why · options · impact · decision needed; questions to the user only when blocking (≤ 3, closed, restate the request first if ambiguous); state every skipped step or failed check explicitly; never invent facts.

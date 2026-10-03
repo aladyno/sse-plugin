@@ -19,3 +19,5 @@ Read-only: produce the plan; implementation goes to `ag-sse-implementer`.
 
 ## Output
 Debt register (item · location · impact · effort · risk · recommendation) · ordered roadmap · the first safe step to take now.
+
+Communicate per the [Communication Standard](../shared/communication-standard.md) §6: lead with the conclusion and why; blockers = why · options · impact · decision needed; questions to the user only when blocking (≤ 3, closed, restate the request first if ambiguous); state every skipped step or failed check explicitly; never invent facts.

@@ -67,6 +67,7 @@ A deliberate extra status (e.g. a regulated approval step) is a trade-off to nam
 
 | Standard / practice | Use it for | Key idea to apply |
 |---|---|---|
+| Conway's law (1968) + inverse Conway maneuver | Tracker adoption, project/component layout | The tracker is a communication structure: lay out projects/components by domain boundary, not org chart; enforce single intake, ownership and linked history before tuning the tool |
 | Workflow-as-state-machine (reachability, liveness, invariants) | Any workflow design/review | Reject a workflow where any status is unreachable or cannot reach a Done-category status |
 | "Status = where work waits" / fewest statuses (Kanban practice) | Simplifying workflows | Keep a status only if it has a distinct owner or wait reason; model Blocked as a flag, not a status |
 | Atlassian workflow guidance (Jira Cloud) | Jira workflow configuration | Map every status to the right category; set Resolution on entering Done and clear it on reopen; share one workflow across projects instead of copies |
@@ -120,6 +121,9 @@ Read on demand, not by default.
   dependency queries, history operators, performance tips.
 - [references/automation-rules.md](references/automation-rules.md) — rule anatomy, eleven
   guardrails, smart values, recipes with the guardrail that matters.
+- [references/adoption-playbook.md](references/adoption-playbook.md) — why adopt a tracker
+  (Conway's law), six communication symptoms → mechanism → measurable check, rollout and
+  resistance, the what/why/alternative feedback rule, failure modes, 30/60/90-day health check.
 
 Helper scripts — for the user to run (the entity suggests the command and reads the pasted
 output; it never runs them). Stdlib Python; paths are absolute via `${CLAUDE_PLUGIN_ROOT}` so any cwd works:

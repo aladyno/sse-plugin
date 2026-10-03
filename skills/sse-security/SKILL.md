@@ -127,7 +127,8 @@ its preconditions and its fix in words; never hand over a working exploit or pay
 Default next step: fix needed → `/sse-plugin:implement`; diff/PR review → `/sse-plugin:review`;
 detection and alerting → `/sse-plugin:observe`; active compromise → `/sse-plugin:incident`.
 Secret rollout, IAM, pipeline or infra hardening → `sse-devops`; data exposure through a
-third-party call → `sse-integration`.
+third-party call → `sse-integration`. Programme-level risk in money, control investment, compliance
+roadmap and org-wide incident readiness → `sse-ciso`.
 
 ## References
 

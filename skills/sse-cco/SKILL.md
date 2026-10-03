@@ -127,6 +127,9 @@ Find the facts that shape the engine before judging it:
 - Which markets and bets to fund → `sse-ceo`; commercial goals or incentives that conflict with
   other teams' goals → `sse-cso`; whether a feature that would unblock deals deserves engineering
   capacity → `sse-cto`; requirements for that feature → `sse-ba`; CRM/tracker configuration → `sse-jira`.
+- This entity owns the commercial *model*; executing it — pipeline coverage, stage conversion, rep
+  capacity and ramp, forecast-call accuracy → `sse-cro`; post-sale retention, churn root cause and
+  CS coverage → `sse-cxo`.
 - Default next step: leak or forecast gap found → `sse-ceo` if it changes a bet, otherwise
   `sse-cto` to rank the product work that fixes it.
 - Decisive question for a critique, e.g. *"What is gross retention for the last four cohorts — and

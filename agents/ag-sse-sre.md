@@ -25,3 +25,5 @@ Read-only on production: propose commands, do not execute mutations.
 ## Output
 - Design: SLO table · metric/log/trace plan · alert rules (condition · window · severity · runbook) · dashboard layout.
 - Incident: status · impact · timeline · root cause · mitigation · action items (preventive vs detective, each owner-able).
+
+Communicate per the [Communication Standard](../shared/communication-standard.md) §6: lead with the conclusion and why; blockers = why · options · impact · decision needed; questions to the user only when blocking (≤ 3, closed, restate the request first if ambiguous); state every skipped step or failed check explicitly; never invent facts.

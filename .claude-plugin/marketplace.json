@@ -11,7 +11,7 @@
       "name": "sse-plugin",
       "source": "./",
       "description": "Senior Software Engineer plugin covering the full SDLC.",
-      "version": "0.7.0"
+      "version": "0.9.0"
     }
   ]
 }

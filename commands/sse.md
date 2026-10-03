@@ -21,9 +21,11 @@ If the task is empty, ask the user what they want to achieve and stop.
    | Operate | SLO, alerts, dashboards, incident, outage | `ag-sse-sre` |
    | Maintain | tech debt, upgrade, legacy, cleanup | `ag-sse-maintainer` |
 
+   Not an SDLC task but a business/executive decision (budget, hiring, pricing, pipeline, retention, compliance programme, contracts, AI/data strategy, eng org) → suggest `/sse-plugin:exec <role>` (one lens) or `/sse-plugin:boardroom` (several lenses) and stop.
+
 2. **Plan** — state the phases in order and why, in 3–5 lines. For a full feature the default chain is Design → Code → Test → Review → Deploy → Operate. Skip phases that add no value for this task.
 3. **Gate** — if a phase produces a decision the user must own (design choice, release, destructive change), stop after that phase and ask before continuing.
 4. **Execute** each phase by delegating to its agent with the previous phase's output as context. Run independent phases in parallel (e.g. Test + Review of the same diff).
 5. **Synthesize**: summary → key decisions → changes made → risks / open questions → next command to run (e.g. `/sse-plugin:ship`).
 
-Respond in the user's language.
+Respond in the user's language, following [shared/communication-standard.md](../shared/communication-standard.md) §6 (conclusion and why first; blockers with options and impact; no silent skips).

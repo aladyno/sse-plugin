@@ -6,8 +6,8 @@ Each expert-entity `SKILL.md` links here instead of repeating it.
 ## 0. What an entity is — and is not
 
 - The **commands and subagents** of this plugin (`/sse-plugin:design`, `:implement`, `:test`,
-  `:review`, `:ship`, `:observe`, `:incident`, `:maintain`, `/sse-plugin:sse`; subagents are named
-  `ag-sse-*`) **own and drive workflows** end to end and produce their own deliverables.
+  `:review`, `:ship`, `:observe`, `:incident`, `:maintain`, `/sse-plugin:sse`, and the executive
+  `:exec`, `:boardroom`, `:decide`; subagents are named `ag-sse-*`) **own and drive workflows** end to end and produce their own deliverables.
 - Naming: **`sse-<role>` = expert-entity skill** (this contract); **`ag-sse-<role>` = workflow
   subagent**. `sse-architect` (skill) and `ag-sse-architect` (agent) are different things.
 - An **entity joins work already in progress**. It is summoned mid-conversation, takes the current
@@ -140,6 +140,9 @@ invokes another skill itself.
 | Live incident / postmortem | `/sse-plugin:incident` |
 | Tech debt, upgrades, refactor plan | `/sse-plugin:maintain` |
 | Not sure which phase | `/sse-plugin:sse` |
+| Numbers-backed executive review by one role | `/sse-plugin:exec <role>` |
+| Decision spanning several executive roles | `/sse-plugin:boardroom` |
+| Record a decision the user has taken | `/sse-plugin:decide` |
 | Another lens needed | the matching `sse-<role>` entity |
 
 If the project has its own workflow skills/commands (found in §2), prefer suggesting those.
@@ -170,6 +173,9 @@ Rules from this contract (§0–§7) are **linked, not copied** into SKILL.md.
 Respond in the **user's language**. Keep standard names, technical terms and identifiers in their
 original form.
 
+How to communicate (why before how, receiver's context, active receiving, cross-border rules) follows the
+[Communication Standard](communication-standard.md) §6 — linked, not copied.
+
 ---
 
 ## Roster
@@ -189,10 +195,26 @@ original form.
 | `sse-ceo` | Company direction and bets: where to play, capital & people across the bet portfolio, stakeholder alignment, kill/pivot | Rumelt's strategy kernel (diagnosis → guiding policy → coherent actions) | advisory |
 | `sse-cso` | Strategy deployment (Chief Strategy Officer): goal-cascade traceability, orphan/unowned goals, conflicting team goals, silos, unowned seams, communication gaps | Goal-tree traceability audit | advisory |
 | `sse-cco` | Commercial engine (Chief Commercial Officer): revenue quality (retention vs. new), pipeline & forecast honesty, pricing & packaging, go-to-market model, sales capacity, concentration | Revenue bridge decomposition (opening → new + expansion − contraction − churn → closing) | advisory |
+| `sse-cfo` | Money: survives the bear case? each unit of cash beats its next-best use? runway, burn multiple, cohort unit economics, dilution | Default-alive test with pre-set cut triggers | advisory |
+| `sse-cro` | Sales-engine execution: will the committed number land — pipeline coverage, stage conversion, cycle time, ramped capacity, forecast-call accuracy | Funnel arithmetic (coverage × conversion × capacity) | advisory |
+| `sse-cxo` | Post-sale customer (Chief Customer Officer): gross retention, churn cause, time-to-value, CS coverage and cost to serve per segment | GRR-first retention decomposition + churn-reason taxonomy | advisory |
+| `sse-cmo` | Demand creation: ICP → job → one-sentence position → channel that pays back | Positioning-to-payback chain | advisory |
+| `sse-cpo` | Product bets: real job, North Star movement, retention evidence of fit, kill signal, opportunity cost | Product bet card | advisory |
+| `sse-coo` | Operating machine: one owner, leading metric, review rhythm, escalation path, constraint and 3× scale point per recurring outcome | Execution-loop audit | advisory |
+| `sse-chro` | People system: can roles, levels, pay and managers staff and keep the plan — headcount flow, ramp, regrettable loss | Headcount bridge | advisory |
+| `sse-ciso` | Security *programme*: which risks deserve money — expected loss vs control cost, compliance pull, response readiness (design-level threats stay with `sse-security`) | Quantified risk register (FAIR-style ALE vs control cost) | advisory |
+| `sse-gc` | Legal risk allocation (issue-spotting, not legal advice): who bears which loss, capped how, exit triggers, regimes triggered | Risk-allocation review | advisory |
+| `sse-cdo` | Data as asset and liability: decision it drives, right to use (incl. AI training), consumers, exposure | Data-asset ledger | advisory |
+| `sse-caio` | AI bets: eval quality and error SLO, regulatory risk tier, API / fine-tune / build path, cost curve at scale | Eval-first AI investment gate | advisory |
+| `sse-vpe` | Engineering operating model: throughput and where work waits, hiring funnel, team spans, on-call and production discipline | DORA four keys + wait-time decomposition | advisory |
 | `sse-jira` | Issue-tracker design: workflows, JQL, automation, hygiene | Workflow-as-state-machine | advisory |
 | `sse-ba` | Business problem, rules, flows, requirement quality | As-is / to-be gap analysis | hybrid |
 | `sse-qc` | Requirement gaps, test design, quality risk | Risk-based testing | hybrid |
 | `sse-brainstorming` | Raw idea → approved design intent: path sizing, decomposition, YAGNI, approval before code | Three-path classification (spike / bounded / architectural) + approval gate | hybrid |
+
+Every executive entity from `sse-cfo` to `sse-vpe` has a twin review subagent `ag-sse-<role>` (run via
+`/sse-plugin:exec <role>` or `/sse-plugin:boardroom`) that applies the same lens with forcing questions and the
+entity's helper scripts; the entity itself stays advisory.
 
 **advisory** = analysis in words; no files written. **hybrid** = advisory `diag` mode **plus**
 document-producing modes (requirements/AC, test plan/cases, design spec). Only these three are hybrid.

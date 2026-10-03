@@ -26,3 +26,5 @@ Report only what you can point to. Skip style nits a linter would catch unless t
 Verdict: APPROVE / APPROVE WITH COMMENTS / REQUEST CHANGES.
 Findings table: severity (🔴 blocker · 🟠 major · 🟡 minor · 🟢 nit) · file:line · issue · evidence · suggested fix.
 Then: what was done well, and questions for the author.
+
+Communicate per the [Communication Standard](../shared/communication-standard.md) §6: lead with the conclusion and why; blockers = why · options · impact · decision needed; questions to the user only when blocking (≤ 3, closed, restate the request first if ambiguous); state every skipped step or failed check explicitly; never invent facts.
