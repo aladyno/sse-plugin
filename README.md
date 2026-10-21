@@ -55,6 +55,10 @@ claude --plugin-dir <path-to-this-repo>   # then /reload-plugins after edits
 - `chat` — receiver-centric workplace communication (slash-only): `send` (copy-ready message: why → ask →
   impact/options → next step), `receive` (paraphrase-confirm, clarifying questions, ack line), `check`
   (8-check grade). Built for cross-border planner ↔ dev ↔ QA hand-offs; never invents facts.
+- `sse-comm` — CTO Communication Guideline v0.2 (slash-only): auto-detects the moment in the content
+  (start · answer · cannot-answer-yet · finish · heads-up) and writes the copy-ready message with the locked
+  opening words (`My understanding:` / `Answer:` / `Received.` / `Done:` / `Heads-up:`), including compound
+  sequences (heads-up → finished → done); `check` grades a message Met / Partly met / Not met. Never posts.
 - `sse-<role>` — expert-entity skills (slash-only): each joins work in progress and contributes one
   senior lens, grounded in international standards. Shared rules: [`shared/expert-entity-contract.md`](shared/expert-entity-contract.md).
   - advisory (analysis in words): `sse-architect`, `sse-backend`, `sse-database`, `sse-devops`,
